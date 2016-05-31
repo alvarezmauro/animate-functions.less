@@ -1,0 +1,31 @@
+@-webkit-keyframes animate-slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes animate-slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.animate-slideOutUp(@duration:@animateDefaultDuration, @delay:@animateDefaultDelay) {
+  .animate(@duration, @delay);
+  -webkit-animation-name: animate-slideOutUp;
+  animation-name: animate-slideOutUp;
+};

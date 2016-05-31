@@ -1,0 +1,33 @@
+@-webkit-keyframes animate-fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes animate-fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.animate-fadeInDownBig(@duration:@animateDefaultDuration, @delay:@animateDefaultDelay) {
+  .animate(@duration, @delay);
+  -webkit-animation-name: animate-fadeInDownBig;
+  animation-name: animate-fadeInDownBig;
+};

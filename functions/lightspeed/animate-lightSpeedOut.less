@@ -1,0 +1,31 @@
+@-webkit-keyframes animate-lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animate-lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.animate-lightSpeedOut(@duration:@animateDefaultDuration, @delay:@animateDefaultDelay, @timing-function:ease-in) {
+  .animate(@duration, @delay);
+  -webkit-animation-name: animate-lightSpeedOut;
+  animation-name: animate-lightSpeedOut;
+  -webkit-animation-timing-function: @timing-function;
+  animation-timing-function: @timing-function;
+};
