@@ -1,18 +1,13 @@
-**animate-functions.less**
-===================
-----------
+#animate-functions.less
 
-What is animate-functions.less?
--------------------------------
-Is a collection of configurable CSS animations using LESS functions.
+##What is animate-functions.less?##
+It's a collection of configurable CSS animations using LESS functions.
 
-Bower Package
--------------
+##Bower Package
 ```
 $ bower install animate-functions.less --save
 ```
-Why is useful?
--------------
+##Why is useful?
 #### Functions or Classes
 You can Include the animations as part of a new CSS rule-set or use them by adding classes to the markup:
 ```less
@@ -53,8 +48,7 @@ Each animation is defined in an individual LESS file (they are grouped in folder
 @import "yourLessFolder/animate-functions.less/functions/attention-seekers/af-bounce";
 @import "yourLessFolder/animate-functions.less/functions/attention-seekers/af-flash";
 ```
-How to use it?
--------------
+##How to use it?
 It's very simple:
 * Include af-base.less
 * Define @animateDefaultDuration and @animateDefaultDelay if you want to override the default duration and delay values (Optional)
