@@ -15,7 +15,7 @@ Why is useful?
 -------------
 #### Functions or Classes
 You can Include the animations as part of a new CSS rule-set or use them by adding classes to the markup:
-```javascript
+```less
 //Including animations as part of a CSS rule-set
 .page-home.ng-enter{
     .af-slideInDown();
@@ -33,7 +33,7 @@ You can Include the animations as part of a new CSS rule-set or use them by addi
 
 #### Configurability
 You can easily define the duration and delay of each animation:
-```javascript
+```less
 .page-home.ng-enter{
 // The first parameter defines the duration and the second one the delay
     .af-slideInDown(1s, 3s);
@@ -47,7 +47,7 @@ In case you want to modify the default values you just need to override them by 
 #### Modularization
 Each animation is defined in an individual LESS file (they are grouped in folders by family type). This allows you to include only the animations that you are going to use, for example:
 
-```javascript
+```less
 @import "yourLessFolder/animate-functions.less/af-base";
 
 @import "yourLessFolder/animate-functions.less/functions/attention-seekers/af-bounce";
@@ -60,7 +60,7 @@ It's very simple:
 * Define @animateDefaultDuration and @animateDefaultDelay if you want to override the default duration and delay values (Optional)
 * Include the animations that you want ex: functions/bouncing-exits/af-bounceOut.less
 
-```javascript
+```less
 @import "yourLessFolder/animate-functions.less/af-base";
 
 // Override Default Values
