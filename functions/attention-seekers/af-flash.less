@@ -1,0 +1,31 @@
+@-webkit-keyframes af-flash {
+  from, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes af-flash {
+  from, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+// Less Function
+.af-flash(@duration:@animateDefaultDuration, @delay:@animateDefaultDelay) {
+  .af-base(@duration, @delay);
+  -webkit-animation-name: af-flash;
+  animation-name: af-flash;
+};
+
+// CSS Class
+.af-flash{
+  .af-flash();
+}
