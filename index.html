@@ -1,1 +1,279 @@
-"My Page" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>animate-functions.less</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="animate-functions.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="header container">
+        <span id="animationSandbox" style="display: block;">
+            <h1 class="header__title">animate-functions.less</h1>
+        </span>
+    <span class="header__subtitle">Just select an animation</span>
+</header>
+
+<main class="site__content container" role="content">
+    <div>
+        <form>
+            <select class="input input--dropdown js--animations">
+                <optgroup label="Attention Seekers">
+                    <option value="af-bounce">bounce</option>
+                    <option value="af-flash">flash</option>
+                    <option value="af-pulse">pulse</option>
+                    <option value="af-rubberBand">rubberBand</option>
+                    <option value="af-shake">shake</option>
+                    <option value="af-swing">swing</option>
+                    <option value="af-tada">tada</option>
+                    <option value="af-wobble">wobble</option>
+                    <option value="af-jello">jello</option>
+                </optgroup>
+
+                <optgroup label="Bouncing Entrances">
+                    <option value="af-bounceIn">bounceIn</option>
+                    <option value="af-bounceInDown">bounceInDown</option>
+                    <option value="af-bounceInLeft">bounceInLeft</option>
+                    <option value="af-bounceInRight">bounceInRight</option>
+                    <option value="af-bounceInUp">bounceInUp</option>
+                </optgroup>
+
+                <optgroup label="Bouncing Exits">
+                    <option value="af-bounceOut">bounceOut</option>
+                    <option value="af-bounceOutDown">bounceOutDown</option>
+                    <option value="af-bounceOutLeft">bounceOutLeft</option>
+                    <option value="af-bounceOutRight">bounceOutRight</option>
+                    <option value="af-bounceOutUp">bounceOutUp</option>
+                </optgroup>
+
+                <optgroup label="Fading Entrances">
+                    <option value="af-fadeIn">fadeIn</option>
+                    <option value="af-fadeInDown">fadeInDown</option>
+                    <option value="af-fadeInDownBig">fadeInDownBig</option>
+                    <option value="af-fadeInLeft">fadeInLeft</option>
+                    <option value="af-fadeInLeftBig">fadeInLeftBig</option>
+                    <option value="af-fadeInRight">fadeInRight</option>
+                    <option value="af-fadeInRightBig">fadeInRightBig</option>
+                    <option value="af-fadeInUp">fadeInUp</option>
+                    <option value="af-fadeInUpBig">fadeInUpBig</option>
+                </optgroup>
+
+                <optgroup label="Fading Exits">
+                    <option value="af-fadeOut">fadeOut</option>
+                    <option value="af-fadeOutDown">fadeOutDown</option>
+                    <option value="af-fadeOutDownBig">fadeOutDownBig</option>
+                    <option value="af-fadeOutLeft">fadeOutLeft</option>
+                    <option value="af-fadeOutLeftBig">fadeOutLeftBig</option>
+                    <option value="af-fadeOutRight">fadeOutRight</option>
+                    <option value="af-fadeOutRightBig">fadeOutRightBig</option>
+                    <option value="af-fadeOutUp">fadeOutUp</option>
+                    <option value="af-fadeOutUpBig">fadeOutUpBig</option>
+                </optgroup>
+
+                <optgroup label="Flippers">
+                    <option value="af-flip">flip</option>
+                    <option value="af-flipInX">flipInX</option>
+                    <option value="af-flipInY">flipInY</option>
+                    <option value="af-flipOutX">flipOutX</option>
+                    <option value="af-flipOutY">flipOutY</option>
+                </optgroup>
+
+                <optgroup label="Lightspeed">
+                    <option value="af-lightSpeedIn">lightSpeedIn</option>
+                    <option value="af-lightSpeedOut">lightSpeedOut</option>
+                </optgroup>
+
+                <optgroup label="Rotating Entrances">
+                    <option value="af-rotateIn">rotateIn</option>
+                    <option value="af-rotateInDownLeft">rotateInDownLeft</option>
+                    <option value="af-rotateInDownRight">rotateInDownRight</option>
+                    <option value="af-rotateInUpLeft">rotateInUpLeft</option>
+                    <option value="af-rotateInUpRight">rotateInUpRight</option>
+                </optgroup>
+
+                <optgroup label="Rotating Exits">
+                    <option value="af-rotateOut">rotateOut</option>
+                    <option value="af-rotateOutDownLeft">rotateOutDownLeft</option>
+                    <option value="af-rotateOutDownRight">rotateOutDownRight</option>
+                    <option value="af-rotateOutUpLeft">rotateOutUpLeft</option>
+                    <option value="af-rotateOutUpRight">rotateOutUpRight</option>
+                </optgroup>
+
+                <optgroup label="Sliding Entrances">
+                    <option value="af-slideInUp">slideInUp</option>
+                    <option value="af-slideInDown">slideInDown</option>
+                    <option value="af-slideInLeft">slideInLeft</option>
+                    <option value="af-slideInRight">slideInRight</option>
+
+                </optgroup>
+
+                <optgroup label="Sliding Exits">
+                    <option value="af-slideOutUp">slideOutUp</option>
+                    <option value="af-slideOutDown">slideOutDown</option>
+                    <option value="af-slideOutLeft">slideOutLeft</option>
+                    <option value="af-slideOutRight">slideOutRight</option>
+
+                </optgroup>
+
+                <optgroup label="Zoom Entrances">
+                    <option value="af-zoomIn">zoomIn</option>
+                    <option value="af-zoomInDown">zoomInDown</option>
+                    <option value="af-zoomInLeft">zoomInLeft</option>
+                    <option value="af-zoomInRight">zoomInRight</option>
+                    <option value="af-zoomInUp">zoomInUp</option>
+                </optgroup>
+
+                <optgroup label="Zoom Exits">
+                    <option value="af-zoomOut">zoomOut</option>
+                    <option value="af-zoomOutDown">zoomOutDown</option>
+                    <option value="af-zoomOutLeft">zoomOutLeft</option>
+                    <option value="af-zoomOutRight">zoomOutRight</option>
+                    <option value="af-zoomOutUp">zoomOutUp</option>
+                </optgroup>
+
+                <optgroup label="Specials">
+                    <option value="af-hinge">hinge</option>
+                    <option value="af-rollIn">rollIn</option>
+                    <option value="af-rollOut">rollOut</option>
+                </optgroup>
+            </select>
+
+            <button class="button js--triggerAnimation">Animate it</button>
+        </form>
+
+        <hr/>
+
+        <h2>What is animate-functions.less?</h2>
+        <p>It's a collection configurable CSS animations using LESS functions.</p>
+
+        <h2>Bower Package</h2>
+<pre class="prettyprint lang-css">
+$ bower install animate-functions.less --save
+</pre>
+        <br>
+        <h2>Why is useful?</h2>
+
+        <h3>Functions or Classes</h3>
+        <p>You can Include the animations as part of a new CSS rule-set or use them by adding classes to the markup:</p>
+        <pre class="prettyprint lang-css">
+//Including animations as part of a CSS rule-set
+.page-home.ng-enter{
+    .af-slideInDown();
+    z-index: 2;
+}
+
+.page-home.ng-leave{
+    .af-slideOutUp();
+    z-index: 1;
+}
+
+// Using animation by adding a class to the markup
+&lt;h1 class="af-flipInX"&gt;This is a title&lt;/h1&gt;
+        </pre>
+
+        <h3>Configurability</h3>
+        <p>You can easily define the duration and delay of each animation:</p>
+        <pre class="prettyprint lang-css">
+.page-home.ng-enter{
+// The first parameter defines the duration and the second one the delay
+    .af-slideInDown(1s, 3s);
+    z-index: 2;
+}
+        </pre>
+        <p>If you call the functions without any parameter, the default values will be
+            used (1s duration, 0s delay).
+        </p>
+
+        <p>In case you want to modify the default values you just need to override them by defining the
+            <b>@animateDefaultDuration</b> and <b>@animateDefaultDelay</b>.</p>
+
+        <h3>Modularization</h3>
+        <p>Each animation is defined in an individual LESS file (they are grouped in folders by family type).
+            This allows you to include only the animations that you are going to use, for example:</p>
+        <pre class="prettyprint lang-css">
+@import "yourLessFolder/animate-functions.less/functions/attention-seekers/animate-bounce";
+
+@import "yourLessFolder/animate-functions.less/functions/attention-seekers/animate-flash";
+        </pre>
+        <br>
+
+        <h2>How to use it?</h2>
+        <p>It's very simple:</p>
+        <ul>
+            <li>Include af-base.less</li>
+            <li>Define <b>@animateDefaultDuration</b> and <b>@animateDefaultDelay</b> if you want to override the default duration and delay values (Optional)</li>
+            <li>Include the animations that you want ex: functions/bouncing-exits/af-bounceOut.less</li>
+        </ul>
+
+        <pre class="prettyprint lang-css">
+@import "yourLessFolder/animate-functions.less/af-base";
+
+// Override Default Values
+@animateDefaultDuration: 1s;
+@animateDefaultDelay: 0;
+
+@import "yourLessFolder/animate-functions.less/functions/bouncing-exits/af-bounceOut.less";
+        </pre>
+
+        <p>Done! Now you can Include the animations as part of a new CSS rule-set or use them by adding classes to the markup:</p>
+        <pre class="prettyprint lang-css">
+//Including animations as part of a CSS rule-set
+.page-home.ng-enter{
+    .af-bounceOut();
+}
+
+
+// Using animation by adding a class to the markup
+&lt;h1 class="af-bounceOut"&gt;This is a title&lt;/h1&gt;
+        </pre>
+
+        <hr/>
+
+        <p class="centred">
+            <a href="https://github.com/alvarezmauro/animate-functions.less">View on GitHub</a>
+        </p>
+        <p class="centred">
+            <small>Created by <a href="http://www.mauroalvarez.com">Mauro Alvarez</a>.</small>
+        </p>
+        <p class="centred">
+            <small>
+                Based on <a href="https://daneden.me/">Daniel Eden</a> project
+                <a href="//github.com/daneden/animate.css">animate.css</a>
+            </small>
+        </p>
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+
+<script>
+    function testAnim(x) {
+        $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            $(this).removeClass();
+        });
+    };
+
+    $(document).ready(function () {
+        $('.js--triggerAnimation').click(function (e) {
+            e.preventDefault();
+            var anim = $('.js--animations').val();
+            testAnim(anim);
+        });
+
+        $('.js--animations').change(function () {
+            var anim = $(this).val();
+            testAnim(anim);
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
