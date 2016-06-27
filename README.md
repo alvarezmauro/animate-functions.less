@@ -1,7 +1,7 @@
 #animate-functions.less
 
 ##What is animate-functions.less?##
-It's a collection of configurable CSS animations using LESS functions.
+It's a collection of configurable CSS animations using LESS mixins.
 
 ##Bower Package
 ```
