@@ -63,3 +63,15 @@ It's very simple:
 
 @import "yourLessFolder/animate-functions.less/functions/bouncing-exits/af-bounceOut.less";
 ```
+
+Done! Now you can Include the animations as part of a new CSS rule-set or use them by adding classes to the markup:
+```less
+//Including animations as part of a CSS rule-set
+.page-home.ng-enter{
+    .af-bounceOut();
+}
+
+
+// Using animation by adding a class to the markup
+<h1 class="af-bounceOut">This is a title</h1>
+```
