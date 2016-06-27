@@ -73,5 +73,5 @@ Done! Now you can Include the animations as part of a new CSS rule-set or use th
 
 
 // Using animation by adding a class to the markup
-&lt;h1 class="af-bounceOut"&gt;This is a title&lt;/h1&gt;
+<h1 class="af-bounceOut">This is a title</h1>
 ```
