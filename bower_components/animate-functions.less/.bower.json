@@ -1,0 +1,33 @@
+{
+  "name": "animate-functions.less",
+  "homepage": "http://alvarezmauro.github.io/animate-functions.less/",
+  "authors": [
+    "Mauro Alvarez <mauroalvarez86@gmail.com>"
+  ],
+  "description": "Collection of configurable CSS animations using LESS functions",
+  "main": "animate-functions.less",
+  "keywords": [
+    "CSS",
+    "LESS",
+    "Animations"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.2",
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.2",
+    "commit": "09ba11301250cb17dd442aaee00f25e23d7659eb"
+  },
+  "_source": "https://github.com/alvarezmauro/animate-functions.less.git",
+  "_target": "^0.0.2",
+  "_originalSource": "animate-functions.less",
+  "_direct": true
+}
