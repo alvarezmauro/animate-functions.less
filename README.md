@@ -1,14 +1,14 @@
 #animate-functions.less
 
 ##What is animate-functions.less?##
-It's a collection of configurable CSS animations using LESS functions.
+It's a collection of configurable CSS animations using LESS mixins.
 
 ##Bower Package
 ```
 $ bower install animate-functions.less --save
 ```
 ##Why is useful?
-#### Functions or Classes
+#### Functions(mixins) or Classes
 You can Include the animations as part of a new CSS rule-set or use them by adding classes to the markup:
 ```less
 //Including animations as part of a CSS rule-set
@@ -35,7 +35,7 @@ You can easily define the duration and delay of each animation:
     z-index: 2;
 }
 ```
-If you call the functions without any parameter, the default values will be used (1s duration, 0s delay).
+If you call the functions(mixins) without any parameter, the default values will be used (1s duration, 0s delay).
 
 In case you want to modify the default values you just need to override them by defining the **@animateDefaultDuration** and **@animateDefaultDelay**.
 
