@@ -4,7 +4,7 @@
   "authors": [
     "Mauro Alvarez <mauroalvarez86@gmail.com>"
   ],
-  "description": "Collection of configurable CSS animations using LESS functions",
+  "description": "Collection of configurable CSS animations using LESS mixins",
   "main": "animate-functions.less",
   "keywords": [
     "CSS",
